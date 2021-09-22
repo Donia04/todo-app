@@ -1,0 +1,65 @@
+#list {
+    background-color: white;
+    max-width: 96%;
+    width: 800px;
+    min-width: 80%;
+    min-height: 300px;
+    max-height: 65vh;
+    margin: 10px auto;
+    overflow: scroll;
+
+    .listItem {
+        height: 60px;
+        width: 98%;
+        margin: 5px auto;
+        background-color: $list-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        p {
+            font-size: 2rem;
+        }
+
+        .checkButton {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: $check-btn;
+            margin-left: 10px;
+
+            &:hover {
+                background-color: $check-btn-hover;
+            }
+
+            &:active {
+                background-color: $check-btn;
+            }
+        }
+
+        .deleteButton {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: $delete-btn;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: $delete-btn-hover;
+            }
+
+            &:active {
+                background-color: $delete-btn;
+            }
+        }
+    }
+    #placeholder {
+        color: $placeholder;
+        text-align: center;
+    }
+
+    .checked {
+        background-color: $checked;
+        text-decoration: line-through;
+    }
+}

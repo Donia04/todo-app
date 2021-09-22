@@ -1,0 +1,108 @@
+@import 'styles/config';
+
+main {
+    width: 75%;
+    max-width: 1000px;
+    min-height: 500px;
+    max-height: 85vh;
+    margin: 10vh auto;
+    background-color: $main-color;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px $lighter-main-color;
+
+    header {
+        width: 80%;
+        padding-top: 2vh;
+        border-bottom: $border-template;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #buttons {
+        margin-top: 10px;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            height: 75%;
+            flex: 2;
+            display: flex;
+
+            #newItem {
+                height: 100%;
+                border: none;
+                margin-right: 5px;
+                padding-left: 10px;
+                flex-grow: 4;
+            }
+
+            #add {
+                min-width: 50px;
+                border: none;
+                border-radius: 5px;
+                background-color: $add-btn;
+                flex-grow: 1;
+
+                &:hover {
+                    background-color: $add-btn-hover;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    background-color: $add-btn;
+                }
+            }
+        }
+
+        button {
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px silver;
+            margin: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: translate(2px, 2px);
+                box-shadow: none;
+            }
+        }
+
+        #checkAll {
+            background-color: $check-all-btn;
+
+            &:hover {
+                background-color: $check-all-btn-hover;
+                color: white;
+            }
+
+            &:active {
+                color: black;
+            }
+        }
+
+        #deleteAll {
+            background-color: $delete-all-btn;
+
+            &:hover {
+                background-color: $delete-all-btn-hover;
+                color: white;
+            }
+
+            &:active {
+                color: black;
+            }
+        }
+    }
+}
+
+@import 'styles/background';
+@import 'styles/list';

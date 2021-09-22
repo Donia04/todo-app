@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+main {
+  width: 75%;
+  max-width: 1000px;
+  min-height: 500px;
+  max-height: 85vh;
+  margin: 10vh auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px lightblue;
+          box-shadow: 5px 5px 5px lightblue;
+}
+
+main header {
+  width: 80%;
+  padding-top: 2vh;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+main #buttons {
+  margin-top: 10px;
+  width: 100%;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #buttons div {
+  height: 75%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #buttons div #newItem {
+  height: 100%;
+  border: none;
+  margin-right: 5px;
+  padding-left: 10px;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+main #buttons div #add {
+  min-width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgrey;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main #buttons div #add:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+main #buttons div #add:active {
+  background-color: darkgrey;
+}
+
+main #buttons button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px silver;
+          box-shadow: 2px 2px silver;
+  margin: 10px;
+}
+
+main #buttons button:hover {
+  cursor: pointer;
+}
+
+main #buttons button:active {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main #buttons #checkAll {
+  background-color: lightgreen;
+}
+
+main #buttons #checkAll:hover {
+  background-color: green;
+  color: white;
+}
+
+main #buttons #checkAll:active {
+  color: black;
+}
+
+main #buttons #deleteAll {
+  background-color: lightcoral;
+}
+
+main #buttons #deleteAll:hover {
+  background-color: red;
+  color: white;
+}
+
+main #buttons #deleteAll:active {
+  color: black;
+}
+
+html {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-image: linear-gradient(135deg, lightskyblue, blueviolet);
+  -webkit-animation: gradient 5s ease alternate infinite;
+          animation: gradient 5s ease alternate infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+#list {
+  background-color: white;
+  max-width: 96%;
+  width: 800px;
+  min-width: 80%;
+  min-height: 300px;
+  max-height: 65vh;
+  margin: 10px auto;
+  overflow: scroll;
+}
+
+#list .listItem {
+  height: 60px;
+  width: 98%;
+  margin: 5px auto;
+  background-color: rgba(176, 196, 222, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#list .listItem p {
+  font-size: 2rem;
+}
+
+#list .listItem .checkButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: 10px;
+}
+
+#list .listItem .checkButton:hover {
+  background-color: palegreen;
+}
+
+#list .listItem .checkButton:active {
+  background-color: green;
+}
+
+#list .listItem .deleteButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 10px;
+}
+
+#list .listItem .deleteButton:hover {
+  background-color: pink;
+}
+
+#list .listItem .deleteButton:active {
+  background-color: red;
+}
+
+#list #placeholder {
+  color: grey;
+  text-align: center;
+}
+
+#list .checked {
+  background-color: slategray;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
